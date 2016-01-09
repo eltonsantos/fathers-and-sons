@@ -69,6 +69,6 @@ class FathersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def father_params
-      params.require(:father).permit(:name, :birth_date, :occupation)
+      params.require(:father).permit(:name, :birth_date, :occupation, :picture)
     end
 end

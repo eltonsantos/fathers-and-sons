@@ -2,8 +2,13 @@
   <%= f.input :name %>
   <%= f.input :birth_date %>
   <%= f.input :occupation %>
+  <%= f.input :picture, as: :file, input_html: { class: 'form-control' } %>
 
-  <%= f.button :submit, :class => 'btn-primary' %>
-  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                fathers_path, :class => 'btn btn-default' %>
+  <br />
+  
+  <div class="form-group pull-right">
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")), fathers_path, :class => 'btn btn-default' %>
+  	<%= f.button :submit, :class => 'btn-primary' %>
+  </div>
+
 <% end %>

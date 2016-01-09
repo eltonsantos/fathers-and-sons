@@ -12,6 +12,7 @@
   <dd><%= @son.occupation %></dd>
   <dt><strong><%= model_class.human_attribute_name(:father_id) %>:</strong></dt>
   <dd><%= @son.father.name %></dd>
+  <dd><%= image_tag @son.picture.url(:medium) %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

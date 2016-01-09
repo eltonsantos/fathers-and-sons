@@ -19,6 +19,7 @@ gem 'faker'
 gem 'simple_form'
 gem 'twitter-bootstrap-rails'
 gem 'kaminari'
+gem "paperclip", "~> 4.3"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

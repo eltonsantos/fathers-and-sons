@@ -69,6 +69,6 @@ class SonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def son_params
-      params.require(:son).permit(:name, :birth_date, :occupation, :father_id)
+      params.require(:son).permit(:name, :birth_date, :occupation, :father_id, :picture)
     end
 end

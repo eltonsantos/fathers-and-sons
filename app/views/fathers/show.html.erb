@@ -10,6 +10,7 @@
   <dd><%= @father.birth_date %></dd>
   <dt><strong><%= model_class.human_attribute_name(:occupation) %>:</strong></dt>
   <dd><%= @father.occupation %></dd>
+  <dd><%= image_tag @father.picture.url(:medium) %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),
