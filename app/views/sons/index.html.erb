@@ -37,6 +37,10 @@
   </tbody>
 </table>
 
+<br />
+<%= paginate @sons %>
+<br />
+
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_son_path,
             :class => 'btn btn-primary' %>
