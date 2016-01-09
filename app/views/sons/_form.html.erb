@@ -1,0 +1,12 @@
+<%= simple_form_for @son, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :birth_date %>
+  <%= f.input :occupation %>
+  <%= f.collection_select(:father_id, Father.all, :id, :name, {prompt: "Selecione um pai"}, {class: "form-group form-control"}) %>
+  <br />
+  <div class="form-group pull-right">
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")), sons_path, :class => 'btn btn-default' %> 
+    <%= f.button :submit, :class => 'btn-primary' %>
+  </div>
+  
+<% end %>

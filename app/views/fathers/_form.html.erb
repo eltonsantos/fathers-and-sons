@@ -1,0 +1,9 @@
+<%= simple_form_for @father, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :birth_date %>
+  <%= f.input :occupation %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                fathers_path, :class => 'btn btn-default' %>
+<% end %>
